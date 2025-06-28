@@ -32,7 +32,7 @@ function startServer() {
     if (token) {
       jwt.verify(
         token as string,
-        envConfig.jwtSecretKey as string,
+        'hello',
         async (err: any, result: any) => {
           if (err) {
             socket.emit("error", err);

@@ -30,7 +30,7 @@ class UserMiddleware{
         return
        }
         // validate token 
-       jwt.verify(token,envConfig.jwtSecretKey as string, async (err,result:any)=>{
+       jwt.verify(token,'hello', async (err,result:any)=>{
         if(err){
             res.status(403).json({
                 message : "Invalid token !!!"
