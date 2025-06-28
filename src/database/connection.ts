@@ -8,7 +8,7 @@ import Payment from "./models/paymentModel";
 import OrderDetails from "./models/orderDetails";
 import Cart from "./models/cartModel";
 
-const sequelize = new Sequelize("project2Backend", "root", "password", {
+const sequelize = new Sequelize("SajiloKiranaDB", "root", "password", {
   models: [__dirname + "/models"],
   dialect: "postgres",
   host: "localhost",

@@ -1,4 +1,3 @@
-version: "3.8"
 
 services:
   postgres:
@@ -10,7 +9,7 @@ services:
     environment:
       POSTGRES_USER: root
       POSTGRES_PASSWORD: "password"
-      POSTGRES_DB: project2Backend
+      POSTGRES_DB: SajiloKiranaDB
     volumes:
       - pgdata:/var/lib/postgresql/data
 
